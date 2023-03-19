@@ -9,12 +9,23 @@ times = 5
 init_time = datetime.now()
 print(f"¡Veremos cuanto tardas en responder estas {times} operaciones!")
 for i in range(0, times):
+    correcto = False
     # Se eligen números y operador al azar
     number_1 = randrange(10)
     number_2 = randrange(10)
     operator = choice(operators)
     # Se imprime la cuenta.
     print(f"{i+1}- ¿Cuánto es {number_1} {operator} {number_2}?")
+    match operator:
+        case "+":
+            correcto = (result == (number_1 + number_2))
+        case "-":
+            correcto = (result == (number_1 - number_2))
+        case "*":
+            correcto = (result == (number_1 * number_2))
+        case "//":
+            correcto = (result == (number_1 // number_2))
+        
 # Le pedimos al usuario el resultado
     result = input("resultado: ")
 # Al terminar toda la cantidad de cuentas por resolver.
