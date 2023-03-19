@@ -1,0 +1,5 @@
+3. Modifíque el programa anterior para que:
+• Agregar las operaciones multiplicación (*) y división (/) al juego.
+• Imprima al lado o debajo de cada respuesta si el resultado del usuario fué correcto o incorrecto.
+• Además del tiempo informe al finalizar la cantidad de resultados correctos e incorrectos que
+tuvo el usuario.
