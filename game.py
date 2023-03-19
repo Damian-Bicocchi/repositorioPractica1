@@ -1,7 +1,7 @@
 from random import choice, randrange
 from datetime import datetime
 # Operadores posibles
-operators = ["+", "-"]
+operators = ["+", "-","*","//"]
 # Cantidad de cuentas a resolver
 times = 5
 # Contador inicial de tiempo.
