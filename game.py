@@ -16,6 +16,8 @@ for i in range(0, times):
     number_1 = randrange(10)
     number_2 = randrange(10)
     operator = choice(operators)
+    if ((operator == "//") and (number_2 == 0)):
+        number_2 = randrange(1,10)
     # Se imprime la cuenta.
     print(f"{i+1}- ¿Cuánto es {number_1} {operator} {number_2}?")
     # Le pedimos al usuario el resultado
@@ -44,4 +46,6 @@ end_time = datetime.now()
 total_time = end_time - init_time
 # Mostramos ese tiempo en segundos.
 print(f"\n Tardaste {total_time.seconds} segundos.")
+print(f"¡Tuviste {cont} respuestas correctas!")
+print(f"Respondiste mal {times - cont} veces")
 
